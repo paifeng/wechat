@@ -11,9 +11,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.3.0",
 	"appid": "wx76f043f3b86010a1",
-	"projectname": "FMall",
+	"projectname": "%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

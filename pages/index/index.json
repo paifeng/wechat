@@ -1,7 +1,6 @@
 {
     "enablePullDownRefresh": true,
     "usingComponents": {
-        "van-toast": "/dist/toast/index",
         "van-tab": "/dist/tab/index",
         "van-tabs": "/dist/tabs/index"
     }

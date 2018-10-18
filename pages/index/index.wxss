@@ -116,3 +116,12 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+/*tab*/
+.f-tab{
+    background: #FFFFFF;
+    margin-top:10px; 
+}
+.content {
+  padding: 20px;
+  background-color: #fff;
+}

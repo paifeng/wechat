@@ -1,7 +1,4 @@
 //index.js
-
-import Toast from '../../dist/toast/toast';
-
 //获取应用实例
 const app = getApp()
 
@@ -73,7 +70,8 @@ Page({
       }
     ],
     swiperCurrent: 0,
-    active: 1
+    active: 0,
+    tabsTitle: ["精选", "促销"],
   },
   onLoad: function () {
 
@@ -92,14 +90,17 @@ Page({
   },
   //轮播图片点击事件
   swiperclick: function (e) {
-    console.log(this.data.swiperCurrent)
-    Toast("点击位置: " + this.data.swiperCurrent);
+    var that = this
+    wx.showToast({
+      title: `点击位置: ${that.data.swiperCurrent + 1}`,
+      icon: 'none'
+    });
   },
   //Tab页面切换
   onTabChange(e) {
     console.log(JSON.stringify(e))
     wx.showToast({
-      title: `切换到标签 ${event.detail.index + 1}`,
+      title: `切换到标签 ${e.detail.index + 1}`,
       icon: 'none'
     });
   }

@@ -1,5 +1,4 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
-</view>
+<van-search value="{{ keyWord }}" placeholder="请输入搜索关键词" use-action-slot bind:search="onSearch"
+            bind:focus="onSerchFocus">
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
